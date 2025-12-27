@@ -12,6 +12,7 @@ This is a Django-based web application for managing a To-Do list. The applicatio
 API and web views are separated for better code organization.
 
 ## Directory Structure
+```
 todo-list/
 │
 ├── apps/
@@ -56,6 +57,7 @@ todo-list/
 ├── .gitignore
 ├── pytest.ini
 └── README.md
+```
 
 ## Features
 
