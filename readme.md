@@ -64,7 +64,7 @@ todo-list/
 - **Web Interface** with task list, add, edit, and delete functionality
 - **Validations**:
   - All fields required
-  - Status limited to: `pending`, `in-progress`, `completed`
+  - Status limited to: `pending`, `completed`
   - Due date format validation
   - Proper HTTP status codes and JSON error responses
 - **Logging** and exception handling implemented
