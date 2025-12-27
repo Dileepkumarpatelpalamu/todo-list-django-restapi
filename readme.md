@@ -1,4 +1,4 @@
-# To-Do List Project with APIs and Templates
+# To-Do List Project with APIs and Templates Ingegration
 
 ## Project Overview
 
@@ -71,7 +71,7 @@ CREATE TABLE tasks_task (
 
 Setup Instructions
 
-Clone the repository:Bashgit clone <your-repo-url>
+Clone the repository:Bashgit clone https://github.com/Dileepkumarpatelpalamu/todo-list-django-restapi.git
 cd todo-list
 Create and activate virtual environment:Bashpython -m venv venv
 source venv/bin/activate    # On Windows: venv\Scripts\activate
