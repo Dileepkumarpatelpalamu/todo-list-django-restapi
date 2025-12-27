@@ -15,8 +15,7 @@ API and web views are separated for better code organization.
 ```
 todo-list/
 │
-├── apps/
-│   └── tasks/
+│── tasks/
 │       ├── api/
 │       │   ├── __init__.py
 │       │   ├── urls.py
@@ -46,7 +45,7 @@ todo-list/
 │       ├── urls.py
 │       └── apps.py
 │
-├── config/
+├── todo_list/
 │   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
