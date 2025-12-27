@@ -41,7 +41,6 @@ todo-list/
 ├── pytest.ini
 └── README.md
 
-
 ## Features
 
 - **CRUD Operations** via RESTful APIs
