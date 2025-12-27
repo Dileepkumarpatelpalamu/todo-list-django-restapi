@@ -91,7 +91,8 @@ Clone the repository:Bashgit clone https://github.com/Dileepkumarpatelpalamu/tod
 cd todo-list
 Create and activate virtual environment:Bashpython -m venv venv
 source venv/bin/activate    # On Windows: venv\Scripts\activate
-Install dependencies:Bashpip install -r requirements.txt
+Install dependencies:
+pip install -r requirements.txt
 Configure PostgreSQL in todo_list/settings.py
 
 DATABASES = {
@@ -105,7 +106,7 @@ DATABASES = {
     }
 }
 
-Create the database and table (using psql or any client) with the schema above.
+Create the database and table (using psql) with the schema above.
 Run the server:Bashpython manage.py runserver
 Access:
 Web Interface: http://127.0.0.1:8000/
