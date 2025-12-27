@@ -1,0 +1,41 @@
+{% extends "tasks/base.html" %}
+
+{% block title %}Edit Task{% endblock %}
+
+{% block content %}
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h4 class="mb-3">Add New Task</h4>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label class="form-label">Task title</label>
+                <input type="text" name="title" value="{{ task.title }}" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Task description</label>
+                <textarea name="description" class="form-control">{{ task.description }}</textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select name="status" class="form-select" value="{{ task.status }}">
+                    <option value="pending" {% if task.status == 'pending' %}selected{% endif %}>Pending</option>
+                    <option value="completed" {% if task.status == 'completed' %}selected{% endif %}>Completed</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Due Date</label>
+                <input type="date" name="due_date" value="{{ task.due_date }}" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Update Task</button>
+            <a href="/" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

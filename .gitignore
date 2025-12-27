@@ -1,0 +1,75 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+*.log
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+env/
+ENV/
+.venv/
+
+# =========================
+# Django
+# =========================
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Django migration cache
+migrations/__pycache__/
+
+# Django local settings
+settings_local.py
+.env
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Pytest
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Node / Frontend (if any)
+# =========================
+node_modules/
+
+# =========================
+# Secrets
+# =========================
+.env
+.env.*
