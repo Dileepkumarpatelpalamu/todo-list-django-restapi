@@ -92,7 +92,9 @@ cd todo-list
 Create and activate virtual environment:Bashpython -m venv venv
 source venv/bin/activate    # On Windows: venv\Scripts\activate
 Install dependencies:Bashpip install -r requirements.txt
-Configure PostgreSQL in todo_list/settings.py:PythonDATABASES = {
+Configure PostgreSQL in todo_list/settings.py
+
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'todo_list_db',
@@ -102,6 +104,7 @@ Configure PostgreSQL in todo_list/settings.py:PythonDATABASES = {
         'PORT': '5432',
     }
 }
+
 Create the database and table (using psql or any client) with the schema above.
 Run the server:Bashpython manage.py runserver
 Access:
