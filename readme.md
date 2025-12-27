@@ -13,31 +13,47 @@ API and web views are separated for better code organization.
 
 ## Directory Structure
 todo-list/
-├── tasks/
-│   ├── api/
-│   │   ├── urls.py
-│   │   └── views.py
-│   ├── web/
-│   │   ├── urls.py
-│   │   └── views.py
-│   ├── templates/
-│   │   └── tasks/
-│   │       ├── add_task.html
-│   │       ├── base.html
-│   │       ├── edit_task.html
-│   │       └── task_list.html
-│   ├── tests/
-│   │   ├── test_api.py
-│   │   └── test_web_views.py
-│   ├── db.py
-│   ├── urls.py
-│   └── init.py
-├── todo_list/
+│
+├── apps/
+│   └── tasks/
+│       ├── api/
+│       │   ├── __init__.py
+│       │   ├── urls.py
+│       │   └── views.py
+│       │
+│       ├── web/
+│       │   ├── __init__.py
+│       │   ├── urls.py
+│       │   └── views.py
+│       │
+│       ├── templates/
+│       │   └── tasks/
+│       │       ├── base.html
+│       │       ├── task_list.html
+│       │       ├── add_task.html
+│       │       └── edit_task.html
+│       │
+│       ├── repository/
+│       │   ├── __init__.py
+│       │   └── task_repository.py   # raw SQL layer
+│       │
+│       ├── tests/
+│       │   ├── __init__.py
+│       │   ├── test_api.py
+│       │   └── test_web.py
+│       │
+│       ├── urls.py
+│       └── apps.py
+│
+├── config/
+│   ├── __init__.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
+│
 ├── manage.py
 ├── requirements.txt
+├── .gitignore
 ├── pytest.ini
 └── README.md
 
